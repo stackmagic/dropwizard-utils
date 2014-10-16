@@ -11,7 +11,7 @@ related work
 ============
 
 * [dropwizard](http://dropwizard.io): Dropwizard itself, obviously
-* [gradle-dropwizard](https://github.com/stackmagic/gradle-dropwizard): Launch DW from gradle, Can also locally start/stop a DW for your integration/acceptance tests
+* [gradle-dropwizard](https://github.com/stackmagic/gradle-dropwizard): Launch DW from gradle, builds your fatJar, can also locally start/stop DW for your int/acc tests
 
 downloading
 ===========
