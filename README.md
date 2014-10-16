@@ -10,6 +10,7 @@ with the [dropwizard](http://dropwizard.io) version.
 related work
 ============
 
+* [dropwizard](http://dropwizard.io): Dropwizard itself, obviously
 * [gradle-dropwizard](https://github.com/stackmagic/gradle-dropwizard): Launch DW from gradle, Can also locally start/stop a DW for your integration/acceptance tests
 
 downloading
