@@ -64,3 +64,18 @@ public class MyApp extends Application<MyConfig> {
 
 }
 ```
+
+Then change the way you start your dropwizard application to include the
+`SERVER_VERSION` system property which would look something like this:
+
+```bash
+java -jar my-project.jar -DSERVER_VERSION=0.4.2 server config.yml
+```
+
+And now you can check what version of your app is running. Personally, I use
+this to check whether the new version of a daemon is already up after a
+deployment so we can then run smoke tests against the new version.
+
+```bash
+curl --silent http://localhost:7001/version
+```
