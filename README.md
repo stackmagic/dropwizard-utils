@@ -52,5 +52,14 @@ the system property `SERVER_VERSION` via `/version`
 Simply add this to your project in the main class:
 
 ```java
+import net.swisstech.dropwizard.util.VersionBundle;
 
+public class MyApp extends Application<MyConfig> {
+
+    @Override
+    public void initialize(Bootstrap<MyConfig> bootstrap) {
+        bootstrap.addBundle(new VersionBundle());
+    }
+
+}
 ```
