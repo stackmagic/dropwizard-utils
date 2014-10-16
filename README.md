@@ -49,7 +49,8 @@ VersionBundle
 This registers a servlet with the admin context that will return the value of
 the system property `SERVER_VERSION` via `/version`
 
-Simply add this to your project in the main class:
+Simply add this to your project in the main class (this shows only the relevant
+bits, this is not a complete dropwizard application class):
 
 ```java
 import net.swisstech.dropwizard.util.VersionBundle;
