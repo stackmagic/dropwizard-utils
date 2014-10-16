@@ -7,6 +7,11 @@ with the [dropwizard](http://dropwizard.io) version.
 [ ![TravicCI](https://travis-ci.org/stackmagic/dropwizard-util.svg?branch=master) ](https://travis-ci.org/stackmagic/dropwizard-util)
 [ ![Download](https://api.bintray.com/packages/stackmagic/maven/dropwizard-util/images/download.svg) ](https://bintray.com/stackmagic/maven/dropwizard-util/_latestVersion)
 
+related work
+============
+
+* [gradle-dropwizard](https://github.com/stackmagic/gradle-dropwizard): Launch DW from gradle, Can also locally start/stop a DW for your integration/acceptance tests
+
 downloading
 ===========
 
