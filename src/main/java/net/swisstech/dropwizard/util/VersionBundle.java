@@ -1,4 +1,4 @@
-package net.swisstech.dropwizard.utils;
+package net.swisstech.dropwizard.util;
 
 import io.dropwizard.Bundle;
 import io.dropwizard.setup.AdminEnvironment;
