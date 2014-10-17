@@ -1,8 +1,7 @@
 dropwizard-util
 ===============
 
-Miscellaneous dropwizard utilities. I try to keep the version number in sync
-with the [dropwizard](http://dropwizard.io) version.
+Miscellaneous dropwizard utilities. Usually built against the latest version of dropwizard.
 
 [ ![TravicCI](https://travis-ci.org/stackmagic/dropwizard-util.svg?branch=master) ](https://travis-ci.org/stackmagic/dropwizard-util)
 [ ![Download](https://api.bintray.com/packages/stackmagic/maven/dropwizard-util/images/download.svg) ](https://bintray.com/stackmagic/maven/dropwizard-util/_latestVersion)

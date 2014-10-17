@@ -4,7 +4,7 @@ apply plugin: 'eclipse'
 
 description = 'Miscellaneous dropwizard utilities'
 group       = 'net.swisstech'
-version     = '0.7.1'
+version     = '1.0.0'
 
 sourceCompatibility = 1.6
 targetCompatibility = 1.6
@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-	compile "io.dropwizard:dropwizard-core:${project.version}"
+	compile "io.dropwizard:dropwizard-core:0.7.1"
 }
 
 // testing
@@ -85,9 +85,9 @@ bintray {
 		name            = project.name
 		desc            = project.description
 		licenses        = [ 'Apache-2.0' ]
-		websiteUrl      = 'https://github.com/stackmagic/driowizard-util'
-		vcsUrl          = 'https://github.com/stackmagic/driowizard-util.git'
-		issueTrackerUrl = 'https://github.com/stackmagic/driowizard-util/issues'
+		websiteUrl      = 'https://github.com/stackmagic/driowizard-utils'
+		vcsUrl          = 'https://github.com/stackmagic/driowizard-utils.git'
+		issueTrackerUrl = 'https://github.com/stackmagic/driowizard-utils/issues'
 		version {
 			name = project.version
 		}
