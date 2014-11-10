@@ -85,11 +85,13 @@ bintray {
 		name            = project.name
 		desc            = project.description
 		licenses        = [ 'Apache-2.0' ]
-		websiteUrl      = 'https://github.com/stackmagic/driowizard-utils'
-		vcsUrl          = 'https://github.com/stackmagic/driowizard-utils.git'
-		issueTrackerUrl = 'https://github.com/stackmagic/driowizard-utils/issues'
+		websiteUrl      = "https://github.com/stackmagic/${project.name}"
+		vcsUrl          = "https://github.com/stackmagic/${project.name}.git"
+		issueTrackerUrl = "https://github.com/stackmagic/${project.name}/issues"
+		publicDownloadNumbers = true
 		version {
 			name = project.version
+			desc = project.description
 		}
 	}
 }
