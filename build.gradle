@@ -4,19 +4,22 @@ apply plugin: 'eclipse'
 
 description = 'Miscellaneous dropwizard utilities'
 group       = 'net.swisstech'
-version     = '1.0.1'
+version     = '1.0.2'
 
 sourceCompatibility = 1.6
 targetCompatibility = 1.6
 
 // normal repositories and dependencies
 repositories {
+	jcenter()
 	mavenLocal()
 	mavenCentral()
 }
 
 dependencies {
-	compile "io.dropwizard:dropwizard-core:0.7.1"
+	compile 'commons-io:commons-io:+'
+	compile 'net.swisstech:swissarmyknife:+'
+	compile 'io.dropwizard:dropwizard-core:0.7.1'
 }
 
 // testing
