@@ -1,6 +1,9 @@
 
-apply plugin: 'java'
-apply plugin: 'eclipse'
+plugins {
+	id 'java'
+	id 'eclipse'
+	id 'com.jfrog.bintray' version '1.2'
+}
 
 description = 'Miscellaneous dropwizard utilities'
 group       = 'net.swisstech'
@@ -34,7 +37,7 @@ eclipseProject.doLast {
 
 // task to generate wrapper
 task wrapper(type: Wrapper) {
-	gradleVersion = '2.1'
+	gradleVersion = '2.4'
 }
 
 // source-code jar
@@ -52,16 +55,6 @@ publishing {
 				classifier 'sources'
 			}
 		}
-	}
-}
-
-// uploading to jcenter
-buildscript {
-	repositories {
-		jcenter()
-	}
-	dependencies {
-		classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:0.6'
 	}
 }
 
