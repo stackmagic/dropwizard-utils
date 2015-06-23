@@ -2,7 +2,8 @@
 plugins {
 	id 'java'
 	id 'eclipse'
-	id 'com.jfrog.bintray' version '1.2'
+	id 'com.jfrog.bintray'             version '1.2'
+	id 'net.swisstech.eclipseenhancer' version '1.0.0'
 }
 
 description = 'Miscellaneous dropwizard utilities'
@@ -27,13 +28,6 @@ dependencies {
 
 // testing
 test.useTestNG()
-
-// TODO use eclipse-enhancer once it is published
-eclipseProject.doLast {
-	sourceSets*.java.srcDirs*.each      { it.mkdirs() }
-	sourceSets*.resources.srcDirs*.each { it.mkdirs() }
-}
-// END TODO
 
 // task to generate wrapper
 task wrapper(type: Wrapper) {
